@@ -49,10 +49,48 @@
       margin-bottom: 97px;
    }
 
-   &__photo {
+   &__photo1::before {
+      content: "";
+      float: left;
+      position: relative;
+      background: url(../img/photo1.png) no-repeat center;
       width: 100px;
       height: 100px;
       margin-right: 10px;
+      border-radius: 8px;
+   }
+
+   &__photo2::before {
+      content: "";
+      float: left;
+      position: relative;
+      background: url(../img/photo2.png) no-repeat center;
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      border-radius: 8px;
+   }
+
+   &__photo3::before {
+      content: "";
+      float: left;
+      position: relative;
+      background: url(../img/photo3.png) no-repeat center;
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      border-radius: 8px;
+   }
+
+   &__photo4::before {
+      content: "";
+      float: left;
+      position: relative;
+      background: url(../img/photo4.png) no-repeat center;
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      border-radius: 8px;
    }
 
 
@@ -67,23 +105,38 @@
    margin-bottom: 30px;
 
    &__icon {
-      min-width: 40px;
-      min-height: 40px;
-      border-radius: 50%;
+      width: 20%;
 
-      &_check {
-
+      &_check::before {
+         content: "";
+         float: left;
+         position: relative;
          background: url("../img/check.svg") no-repeat center #CEF9C6;
+         min-width: 40px;
+         min-height: 40px;
+         border-radius: 50%;
       }
 
-      &_message {
+      &_message::before {
+         content: "";
+         float: left;
+
          background: url("../img/massage.png") no-repeat center #FFF8DD;
          background-size: 18px 10px;
+         min-width: 40px;
+         min-height: 40px;
+         border-radius: 50%;
       }
 
-      &_download {
+      &_download::before {
+         content: "";
+         float: left;
+         position: relative;
          background: url("../img/empty.png") no-repeat center #E3EFFF;
          background-size: 12px 13px;
+         min-width: 40px;
+         min-height: 40px;
+         border-radius: 50%;
       }
    }
 
@@ -112,128 +165,13 @@
    }
 }
 
-
-@media(min-width:2000px) and (max-width:4000px) {
-   .activity {
-      display: none;
-      width: 30%;
-      background: #fff;
-      color: #131313;
-
-      &__body {
-         margin: 0 30px;
-      }
-
-      &__column {
-         display: flex;
-         flex-direction: column;
-      }
-
-      &__day {
-         opacity: 0.5;
-         font-size: 14px;
-         text-transform: uppercase;
-         margin: 35px 0 32px 0;
-      }
-
-      &__notification {
-         display: flex;
-         justify-content: center;
-         margin-bottom: 30px;
-
-         p {
-            font-size: 15px;
-            line-height: 20px;
-            max-width: 492px;
-         }
-      }
-
-      &__text {
-         background: #F7F6F3;
-         border-radius: 10px;
-         border-radius: 10px;
-         width: 80%;
-         padding: 20px 30px 30px 30px;
-         margin-left: -2%;
-      }
-
-      &__row {
-         display: flex;
-         margin-left: 60px;
-         margin-bottom: 97px;
-      }
-
-      &__photo {
-         width: 100px;
-         height: 100px;
-         margin-right: 10px;
-      }
-
-
-
-   }
-
-
-
-
-   .item-post {
-      display: flex;
-      margin-bottom: 30px;
-
-      &__icon {
-         min-width: 40px;
-         min-height: 40px;
-         border-radius: 50%;
-
-         &_check {
-
-            background: url("../img/check.svg") no-repeat center #CEF9C6;
-         }
-
-         &_message {
-            background: url("../img/massage.png") no-repeat center #FFF8DD;
-            background-size: 18px 10px;
-         }
-
-         &_download {
-            background: url("../img/empty.png") no-repeat center #E3EFFF;
-            background-size: 12px 13px;
-         }
-      }
-
-      &__text {
-         line-height: 20px;
-         font-size: 16px;
-         margin-left: 20px;
-         width: 80%;
-
-         p {
-            max-width: 460px;
-         }
-      }
-
-      &__time {
-         display: flex;
-         width: 12%;
-         justify-content: flex-end;
-         opacity: 0.7;
-         font-size: 14px;
-         line-height: 20px;
-      }
-
-      &__number {
-         margin-right: 4px;
-      }
-   }
-}
-
 @media(min-width:300px) and (max-width:556px) {
    .activity {
       margin: 0;
       height: 100%;
 
       &__body {
-         margin: 0 20px;
+         margin: 0 15px;
       }
 
       &__day {
@@ -266,10 +204,28 @@
 
       &__row {
          display: flex;
-         margin-left: 50px;
+         margin-left: 0;
       }
 
-      &__photo {
+      &__photo1::before {
+         width: 60px;
+         height: 60px;
+         margin-right: 10px;
+      }
+
+      &__photo2::before {
+         width: 60px;
+         height: 60px;
+         margin-right: 10px;
+      }
+
+      &__photo3::before {
+         width: 60px;
+         height: 60px;
+         margin-right: 10px;
+      }
+
+      &__photo4::before {
          width: 60px;
          height: 60px;
          margin-right: 10px;
@@ -282,7 +238,7 @@
       margin-bottom: 20px;
 
       &__icon {
-         width: 8%;
+         width: 12%;
          max-width: 40px;
          max-height: 40px;
          border-radius: 50%;
