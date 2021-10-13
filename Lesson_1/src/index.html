@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson1</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../src/img/Shapes.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="connect" href="https://fonts.googleapis.com">
+	<link rel="connect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="../src/js/script.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- menu.less -->
+		<div class="menu" id="Open">
+			<div class="menu__body">
+				<div class="menu__column">
+					<div class="menu__header">
+						<div class="item-menu item-menu__flex">
+							<div class="item-menu__icon-logo">
+							</div>
+							<div class="item-menu__text-logo">projectus</div>
+							<button class="item-menu__search">
+							</button>
+						</div>
+					</div>
+					<div class="menu__nav">
+						<div class="menu__column">
+							<div class="item-menu item-menu__flex item-menu__background ">
+								<div class="item-menu__avatar">
+									<img src="img/avatar.png" alt="#">
+								</div>
+								<div class="item-menu__name">
+									<div class="item-menu__text">Jean Gonzales</div>
+									<div class="item-menu__text">Product Owner</div>
+								</div>
+								<div class="item-menu__settings settings">
+									<button class="item-menu__button">
+										<span class="item-menu__dots">
+											<span></span>
+											<span></span>
+											<span></span>
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="item-menu item-menu__flex-start">
+								<div class="item-menu__questions">
+									<div class="item-menu__number-questions">372</div>
+									<div class="item-menu__sub-text">Completed Tasks</div>
+								</div>
+								<div class="item-menu__questions">
+									<div class="item-menu__number-questions">11</div>
+									<div class="item-menu__sub-text">Open Tasks</div>
+								</div>
+							</div>
+							<div class="item-menu item-menu__column">
+								<div class="item-menu__text title">
+									menu
+								</div>
+								<a class="item-menu__link" href="#">
+									Home
+								</a>
+								<a class="item-menu__link" href="#">
+									My Tasks
+								</a>
+								<a class="item-menu__link" href="#">
+									Notifications
+									<div class="item-menu__notification">
+										3
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- header.less -->
+		<header class="header">
+			<div class="header__column">
+				<!-- header-top.less -->
+				<div class="header-top">
+					<div class="header-top__body">
+						<div class="header-top__container">
+							<div class="item-header">
+								<div class="item-header__logo">
+								</div>
+								<div class="item-header__text">
+									<h1>Website Redesign</h1>
+								</div>
+								<div class="item-header__settings">
+									<button class="item-header__button" onclick="openMenu(event, 'Open')">
+										<span class=" item-header__dots">
+											<span></span>
+											<span></span>
+											<span></span>
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="item-header item-header__end">
+								<div class="item-header__avatars">
+									<div class="item-header__avatar">
+									</div>
+									<div class="item-header__avatar">
+									</div>
+									<div class="item-header__avatar">
+									</div>
+								</div>
+								<div class="item-header__buttons">
+									<a class="item-header__link">Share</a>
+									<a class="item-header__link"></a>
+								</div>
+							</div>
+						</div>
+						<div class="header-top__nav">
+							<ul class="tab-menu">
+								<li class="tablinks" onclick="openItem(event, 'Tasks')">
+									Tasks<p></p>
+								</li>
+								<li class="tablinks" onclick="openItem(event, 'Kanban')">
+									Kanban<p></p>
+								</li>
+								<li class="tablinks" onclick="openItem(event, 'Activity')">
+									Activity<p></p>
+								</li>
+								<li class="tablinks" onclick="openItem(event, 'Calendar')">
+									Calendar<p></p>
+								</li>
+								<li class="tablinks" onclick="openItem(event, 'Files')">
+									Files<p></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- header-content.less -->
+				<div class="header-content">
+					<div class="activity" id='Activity'>
+						<div class="activity__body">
+							<div class="activity__column">
+								<div class="activity__day">Today</div>
+								<div class="item-post">
+									<div class="item-post__icon item-post__icon_check"></div>
+									<div class="item-post__text">
+										<p> Darika Samak mark as done Listing on Product Hunt
+											so that we can reach as many potential users</p>
+									</div>
+									<div class="item-post__time">
+										<div class="item-post__number">8:40</div>
+										<div class="item-post__half-day">PM</div>
+									</div>
+								</div>
+								<div class="item-post">
+									<div class="item-post__icon item-post__icon_message"></div>
+									<div class="item-post__text">
+										<p> Emilee Simchenko commented on Account for teams
+											and personal in bottom style</p>
+									</div>
+									<div class="item-post__time">
+										<div class="item-post__number">7:32</div>
+										<div class="item-post__half-day">PM</div>
+									</div>
+								</div>
+								<div class="activity__notification">
+									<div class="activity__text">
+										<p> During a project build, it is necessary to evaluate
+											the product design and development against project
+											requirements and outcomes</p>
+									</div>
+								</div>
+								<div class="item-post">
+									<div class="item-post__icon item-post__icon_download"></div>
+									<div class="item-post__text">
+										<p> Darika Samak uploaded 4 files on An option to search
+											in current projects or in all projects</p>
+									</div>
+									<div class="item-post__time">
+										<div class="item-post__number">6:02</div>
+										<div class="item-post__half-day">PM</div>
+									</div>
+								</div>
+								<div class="activity__row">
+									<div class="activity__photo">
+										<img src="img/photo1.png" alt="photo">
+									</div>
+									<div class="activity__photo">
+										<img src="img/photo2.png" alt="photo">
+									</div>
+									<div class="activity__photo">
+										<img src="img/photo3.png" alt="photo">
+									</div>
+									<div class="activity__photo">
+										<img src="img/photo4.png" alt="photo">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+</body>
+
+</html>
+<!-- <div class="container"> (col-lg-offset-3)-отступ
+	<div class="row">
+		<div class="col-lg-4 col-xs-12">
+			<div class="box">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="box"></div>
+					</div>
+					<div class="col-lg-6">
+						<div class="box"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-xs-12">
+			<div class="box"></div>
+		</div>
+		<div class="col-lg-4 col-xs-12">
+			<div class="box"></div>
+		</div>
+	</div>
+</div>
+</div> -->
