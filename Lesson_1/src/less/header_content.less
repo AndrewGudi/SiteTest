@@ -49,52 +49,17 @@
       margin-bottom: 97px;
    }
 
-   &__photo1::before {
-      content: "";
-      float: left;
-      position: relative;
-      background: url(../img/photo1.png) no-repeat center;
+   &__images {
+      display: flex;
       width: 100px;
       height: 100px;
-      margin-right: 10px;
-      border-radius: 8px;
+
+      & img {
+         width: 100px;
+         height: 100px;
+         margin-right: 10%;
+      }
    }
-
-   &__photo2::before {
-      content: "";
-      float: left;
-      position: relative;
-      background: url(../img/photo2.png) no-repeat center;
-      width: 100px;
-      height: 100px;
-      margin-right: 10px;
-      border-radius: 8px;
-   }
-
-   &__photo3::before {
-      content: "";
-      float: left;
-      position: relative;
-      background: url(../img/photo3.png) no-repeat center;
-      width: 100px;
-      height: 100px;
-      margin-right: 10px;
-      border-radius: 8px;
-   }
-
-   &__photo4::before {
-      content: "";
-      float: left;
-      position: relative;
-      background: url(../img/photo4.png) no-repeat center;
-      width: 100px;
-      height: 100px;
-      margin-right: 10px;
-      border-radius: 8px;
-   }
-
-
-
 }
 
 
@@ -207,28 +172,12 @@
          margin-left: 0;
       }
 
-      &__photo1::before {
-         width: 60px;
-         height: 60px;
-         margin-right: 10px;
-      }
-
-      &__photo2::before {
-         width: 60px;
-         height: 60px;
-         margin-right: 10px;
-      }
-
-      &__photo3::before {
-         width: 60px;
-         height: 60px;
-         margin-right: 10px;
-      }
-
-      &__photo4::before {
-         width: 60px;
-         height: 60px;
-         margin-right: 10px;
+      &__images {
+         & img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+         }
       }
    }
 

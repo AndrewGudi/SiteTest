@@ -1,21 +1,12 @@
 .row {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
 }
 .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 img {
@@ -36,53 +27,31 @@ img {
   padding: 10% 5% 15% 12%;
 }
 .menu__column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .item-menu__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .item-menu__flex-start {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 .item-menu__column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .menu__header {
   margin-bottom: 10%;
 }
 .menu__header .item-menu__icon-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: url("../img/Logo.svg") 100% 100% no-repeat;
   min-height: 19px;
   width: 14%;
 }
 .menu__header .item-menu__text-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 79%;
   padding-left: 5%;
@@ -91,12 +60,8 @@ img {
   text-transform: uppercase;
 }
 .menu__header .item-menu__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: url("../img/Search.svg") no-repeat right;
   border: 0;
   padding: 0;
@@ -122,13 +87,8 @@ img {
   border-radius: 50%;
 }
 .menu__nav .item-menu__name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 70%;
   padding-left: 6%;
 }
@@ -141,13 +101,9 @@ img {
   color: #9B9B9B;
 }
 .menu__nav .item-menu__settings {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 20%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 .menu__nav .item-menu__button {
   border-radius: 50%;
@@ -158,20 +114,13 @@ img {
   min-height: 30px;
 }
 .menu__nav .item-menu__dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-end;
 }
 .menu__nav .item-menu__dots span {
   width: 4px;
@@ -181,14 +130,19 @@ img {
   margin: 1px;
 }
 .menu__nav .item-menu__questions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: start;
+  flex-direction: column;
   width: 50%;
+}
+.menu__nav .item-menu__number-questions:first-child {
+  display: flex;
+  justify-content: start;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+  color: #fff;
+  line-height: 150%;
 }
 .menu__nav .item-menu__number-questions {
   font-size: 20px;
@@ -212,17 +166,11 @@ img {
   margin-bottom: 5%;
 }
 .menu__nav .item-menu__link:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .menu__nav .item-menu__notification {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   min-width: 23px;
   height: 100%;
   color: #131313;

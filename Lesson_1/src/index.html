@@ -10,7 +10,7 @@
 	<link rel="connect" href="https://fonts.googleapis.com">
 	<link rel="connect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<script src="../src/js/script.js"></script>
+	<script src="../src/js/script.js" defer></script>
 </head>
 
 <body>
@@ -49,11 +49,15 @@
 							</div>
 							<div class="item-menu item-menu__flex-start">
 								<div class="item-menu__questions">
-									<div class="item-menu__number-questions">372</div>
-									<div class="item-menu__sub-text">Completed Tasks</div>
+									<button class="item-menu__number-questions" id="completedTask" onclick="tasks()">
+										372
+									</button>
+									<div class=" item-menu__sub-text">Completed Tasks</div>
 								</div>
 								<div class="item-menu__questions">
-									<div class="item-menu__number-questions">11</div>
+									<div class="item-menu__number-questions" id="openTask">
+										10
+									</div>
 									<div class="item-menu__sub-text">Open Tasks</div>
 								</div>
 							</div>
@@ -69,7 +73,7 @@
 								</a>
 								<a class="item-menu__link" href="#">
 									Notifications
-									<div class="item-menu__notification">
+									<div class="item-menu__notification" id="notification">
 										3
 									</div>
 								</a>
@@ -77,6 +81,17 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="popup-window" id=popup-window">
+			<div class="popup-window__text" id="text">
+				Are you sure you want to change the number of tasks?
+			</div>
+			<div class="popup-window__buttons">
+				<button class="popup-window__button popup-window__button_true"
+					onclick="buttonYes(),answerQuestion()">Yes</button>
+				<button class="popup-window__button popup-window__button_false"
+					onclick="buttonNo(),answerQuestion()">No</button>
 			</div>
 		</div>
 		<!-- header.less -->
@@ -187,13 +202,7 @@
 									</div>
 								</div>
 								<div class="activity__row">
-									<div class="activity__photo1">
-									</div>
-									<div class="activity__photo2">
-									</div>
-									<div class="activity__photo3">
-									</div>
-									<div class="activity__photo4">
+									<div class="activity__images" id="images">
 									</div>
 								</div>
 							</div>
@@ -201,7 +210,8 @@
 					</div>
 				</div>
 			</div>
-		</header>
+	</div>
+	</header>
 	</div>
 </body>
 

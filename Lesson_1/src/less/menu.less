@@ -169,10 +169,22 @@ img {
    }
 
    .item-menu {
+
       &__questions {
          display: flex;
+         justify-content: start;
          flex-direction: column;
          width: 50%;
+      }
+
+      &__number-questions:first-child {
+         display: flex;
+         justify-content: start;
+         padding: 0;
+         background: transparent;
+         width: 100%;
+         color: #fff;
+         line-height: 150%;
       }
 
       &__number-questions {
