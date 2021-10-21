@@ -83,7 +83,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="popup-window" id=popup-window">
+		<div class="popup-window" id="popup-window">
 			<div class="popup-window__text" id="text">
 				Are you sure you want to change the number of tasks?
 			</div>
@@ -133,7 +133,7 @@
 							</div>
 						</div>
 						<div class="header-top__nav">
-							<ul class="tab-menu">
+							<ul class="tab-menu" id="tab-menu">
 								<li class="tablinks" onclick="openItem(event, 'Tasks')">
 									Tasks<p></p>
 								</li>
@@ -157,7 +157,9 @@
 				</div>
 				<!-- header-content.less -->
 				<div class="header-content">
-					<div class="activity" id='Activity'>
+					<div class="tasks" id="Tasks"></div>
+					<div class="kanban" id="Kanban"></div>
+					<div class="activity" id="Activity">
 						<div class="activity__body">
 							<div class="activity__column">
 								<div class="activity__day">Today</div>
@@ -208,10 +210,11 @@
 							</div>
 						</div>
 					</div>
+					<div class="calendar" id="Calendar"></div>
+					<div class="files" id="Files"></div>
 				</div>
 			</div>
-	</div>
-	</header>
+		</header>
 	</div>
 </body>
 

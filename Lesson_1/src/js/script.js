@@ -2,25 +2,23 @@
 
 // active tablink
 
-let visible = false;
 function openItem(evt, item) {
 
-	let i, tablinks;
-
+	let i, tablinks, displayBlock;
 	tablinks = document.getElementsByClassName("tablinks");
 	for (i = 0; i < tablinks.length; i++) {
 		tablinks[i].className = tablinks[i].className.replace(" active", "");
 	}
 
-	if (visible) {
-		document.getElementById(item).style.display = 'none';
-		visible = false;
-	} else {
-		document.getElementById(item).style.display = 'block';
-		visible = true;
-		evt.currentTarget.className += " active";
+	let nameItem = ['Tasks', 'Kanban', 'Activity', 'Calendar', 'Files'];
+	displayBlock = document.getElementById(item);
+	for (i = 0; i < nameItem.length; i++) {
+		document.getElementById(nameItem[i]).className = document.getElementById(nameItem[i]).className.replace(" active", "");
 	}
 
+
+	displayBlock.className += " active";
+	evt.currentTarget.className += " active";
 
 }
 
